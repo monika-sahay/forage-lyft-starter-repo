@@ -7,5 +7,5 @@ class CarriganTires(Tires):
         self.tire_need_to_service = 0.9
 
     def needs_service(self):
-        wear = [tire> tire_need_to_service for tire in tire_wear]
+        wear = [tire>= tire_need_to_service for tire in tire_wear]
         return any(wear)
